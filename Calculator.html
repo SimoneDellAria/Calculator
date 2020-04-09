@@ -4,49 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
 </head>
 <body>
     <script src="Calculator.js"></script>
 
-    <div style="padding: 10%;">
+    <div>
         
-        <table border="1" cellpadding = "25" cellspacing = "3">
+        <table id="calc_skeleton">
 
             <tr>
-                <td colspan="4" al> <input type="text" id="text_res" value = "0" disabled = "true" style="height: 50px; width: 350px; font-size: 40px; text-align: right;"> </td>
+                <td colspan="4" al> <input type="text" id="text_res" value = "0" disabled = "true"> </td>
             </tr>
 
             <tr>
-                <td><input type="button" id="num_button" value="9" onclick="getInputKeyboard(9)" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td><input type="button" id="num_button" value="8" onclick="getInputKeyboard(8)" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td><input type="button" id="num_button" value="7" onclick="getInputKeyboard(7)" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td><input type="button" id="op_button" value="+" onclick="getOperator('+')" style="height: 50px; width: 50px; font-size: 40px;"></td>
+                <td><input type="button" class="button number" value="9" onclick="getInputKeyboard(9)"></td>
+                <td><input type="button" class="button number" value="8" onclick="getInputKeyboard(8)"></td>
+                <td><input type="button" class="button number" value="7" onclick="getInputKeyboard(7)"></td>
+                <td><input type="button" class="button sign" value="+" onclick="getOperator('+')"></td>
             </tr>
 
             <tr>
-                <td><input type="button" id="num_6" value="6" onclick="getInputKeyboard(6)" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td><input type="button" id="num_5" value="5" onclick="getInputKeyboard(5)" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td><input type="button" id="num_4" value="4" onclick="getInputKeyboard(4)" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td><input type="button" id="op_button" value="-" onclick="getOperator('-')" style="height: 50px; width: 50px; font-size: 40px;"></td>
+                <td><input type="button" class="button number" value="6" onclick="getInputKeyboard(6)"></td>
+                <td><input type="button" class="button number" value="5" onclick="getInputKeyboard(5)"></td>
+                <td><input type="button" class="button number" value="4" onclick="getInputKeyboard(4)"></td>
+                <td><input type="button" class="button sign" value="-" onclick="getOperator('-')"></td>
             </tr>
 
             <tr>
-                <td><input type="button" id="num_3" value="3" onclick="getInputKeyboard(3)" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td><input type="button" id="num_2" value="2" onclick="getInputKeyboard(2)" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td><input type="button" id="num_1" value="1" onclick="getInputKeyboard(1)" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td><input type="button" id="op_button" value="*" onclick="getOperator('*')" style="height: 50px; width: 50px; font-size: 40px;"></td>
+                <td><input type="button" class="button number" value="3" onclick="getInputKeyboard(3)"></td>
+                <td><input type="button" class="button number" value="2" onclick="getInputKeyboard(2)"></td>
+                <td><input type="button" class="button number" value="1" onclick="getInputKeyboard(1)"></td>
+                <td><input type="button" class="button sign" value="*" onclick="getOperator('*')"></td>
             </tr>
 
             <tr>
-                <td><input type="button" id="num_0" value="0" onclick="getInputKeyboard(0)" style="height: 50px; width: 50px; font-size: 40px;"></td>
+                <td><input type="button" class="button number" value="0" onclick="getInputKeyboard(0)"></td>
                 <td colspan="2"></td>
-                <td><input type="button" id="op_button" value="/" onclick="getOperator('/')" style="height: 50px; width: 50px; font-size: 40px;"></td>
+                <td><input type="button" class="button sign" value="/" onclick="getOperator('/')"></td>
             </tr>
 
             <tr>
-                <td colspan="2"><input type="button" id="reset_button" value="CLEAR" onclick="resetCalculator()" style="height: 50px; width: 150px; font-size: 40px;"></td>
-                <td><input type="button" id="dot_button" value="." onclick="addDot()" style="height: 50px; width: 50px; font-size: 40px;"></td>
-                <td ><input type="button" id="equal_sign" value="=" onclick="checkCondition()" style="height: 50px; width: 50px; font-size: 40px;"></td>
+                <td colspan="2"><input type="button" id="reset_button" value="CLEAR" onclick="resetCalculator()"></td>
+                <td><input type="button" id="dot_button" value="." onclick="addDot()"></td>
+                <td ><input type="button" id="equal_button" value="=" onclick="checkCondition()"></td>
             </tr>
 
 
