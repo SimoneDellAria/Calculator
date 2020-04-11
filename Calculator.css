@@ -1,10 +1,17 @@
 
 
-Table#calc_skeleton, tr, td {
-    padding: 5px;
+Table{
     border: 1px dashed black;
     border-collapse: collapse;  
     background-color: skyblue;
+    margin: 0 auto;
+}
+
+tr, td {
+    padding: 5px;
+    border: 1px dashed black;
+    border-collapse: collapse;  
+    background-color: rgb(126, 144, 151);
 }
 
 #text_res {
@@ -47,3 +54,4 @@ Table#calc_skeleton, tr, td {
     color: rgb(0, 0, 0);
     background-color: rgba(224, 139, 28, 0.925);
 }
+
